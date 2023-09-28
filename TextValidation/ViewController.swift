@@ -66,17 +66,16 @@ class ViewController: UIViewController {
             setLabel()
         }
     }
-    
     func setLabel() {
-        if passwordIsValid && usernameIsvalid {
-            topLabel.text = "Congratulations you've loggin in"
-            topLabel.textColor = .white
-            topLabel.font.withSize(17)
-        } else {
-            topLabel.text = "Sorry, the password or username you entered is invalid!!!"
-            topLabel.textColor = .systemYellow
-        }
+    if passwordIsValid && usernameIsvalid {
+        topLabel.text = "Congratulations you've loggin in"
+        topLabel.textColor = .white
+        topLabel.font.withSize(17)
+    } else {
+        topLabel.text = "Sorry, the password or username you entered is invalid!!!"
+        topLabel.textColor = .systemYellow
     }
+}
     
     
     
